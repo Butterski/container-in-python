@@ -1,0 +1,1 @@
+sudo python3 ./container.py --rootfs ./ubuntu_rootfs --memory 128 run -- /usr/bin/perl -e 'my @a; $|=1; my $i=0; while(1){ $a[$i++] = "A" x (1024*1024); print "$i MB\n" if $i % 16 == 0; }'
